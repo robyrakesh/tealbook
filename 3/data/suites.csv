@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Thu Apr 06 17:27:36 GMT 2023","Thu Apr 06 17:28:16 GMT 2023","39280","","Validate Contact Us Form","","","","Validate successful submission of contact form - Fill in all required fields with Desired use case",""
+"failed","Thu Apr 06 17:26:53 GMT 2023","Thu Apr 06 17:27:36 GMT 2023","43183","","Validate Contact Us Form","","","","Validate successful submission of contact form - Fill in all required fields",""
+"failed","Thu Apr 06 17:28:53 GMT 2023","Thu Apr 06 17:29:27 GMT 2023","33743","","Validate Contact Us Form","","","","Validate unsuccessful submission of contact form - Leave required fields empty",""
+"failed","Thu Apr 06 17:28:16 GMT 2023","Thu Apr 06 17:28:53 GMT 2023","37377","","Validate Contact Us Form","","","","Validate unsuccessful submission of contact form - Incorrect email",""
+"passed","Thu Apr 06 17:29:55 GMT 2023","Thu Apr 06 17:29:59 GMT 2023","4535","","Validate Contact Us Form","","","","Validate search functionality - provide a search term",""
