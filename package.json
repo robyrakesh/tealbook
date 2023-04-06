@@ -4,12 +4,18 @@
   "description": "e2e test on tealbook's app",
   "main": "index.js",
   "scripts": {
-    "cy:run": "cypress run --headless --browser chrome"
+    "cy:run": "cypress run --headless --browser chrome --env allure=true",
+    "clean:folders": "rm -R -f allure-report/ && rm -R -f allure-results/",
+    "allure:report": "npm run allure generate allure-results — clean -o allure-report && allure open allure-report",
+    "beforetest": "npm run clean:folders",
+    "tests": "npm run cy:run || npm run aftertest",
+    "aftertest": "npm run allure:report"
   },
   "author": "Rakesh",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.4.0",
+    "@shelex/cypress-allure-plugin": "^2.38.3",
+    "cypress": "^12.5.0",
     "cypress-mochawesome-reporter": "^2.3.0",
     "cypress-multi-reporters": "^1.5.0",
     "cypress-real-events": "^1.5.1",
