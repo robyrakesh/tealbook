@@ -14,6 +14,7 @@
   "author": "Rakesh",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@shelex/cypress-allure-plugin": "^2.38.3",
     "cypress": "^12.5.0",
     "cypress-mochawesome-reporter": "^2.3.0",

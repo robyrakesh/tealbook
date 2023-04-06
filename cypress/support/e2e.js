@@ -25,3 +25,11 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     // failing the test
     return false
 })
+
+const COOKIE_NAME = "hs-eu-cookie-confirmation";
+// The value meaning that user has accepted the cookie policy
+const COOKIE_VALUE = "ACCEPTED";
+
+Cypress.on("window:before:load", window => {
+  window.document.cookie = `${COOKIE_NAME}=${COOKIE_VALUE}`;
+});

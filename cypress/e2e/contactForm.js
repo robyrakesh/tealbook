@@ -6,6 +6,7 @@ import { userDetails } from '../fixtures/test_data'
   describe('Validate Contact Us Form', function() {
     beforeEach(function()  {
       cy.visit('/')
+      cy.clearCookies()
     })
 
     it('Validate successful submission of contact form - Fill in all required fields', function() {
@@ -27,7 +28,7 @@ import { userDetails } from '../fixtures/test_data'
       userDetails.email = 'rt.com'
       homePage.getContactUsForm()
       contactForm.fillForm(userDetails)
-      cy.get('.hs-error-msg').should('be.visible')
+      cy.get('.hs-error-msg').should('have.text', 'Email must be formatted correctly.')
     })
 
     it('Validate unsuccessful submission of contact form - Leave required fields empty', function() {

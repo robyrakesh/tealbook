@@ -9,16 +9,25 @@ const COMPANY = '#company-58999c50-a042-4baf-a822-2ec197817665'
 const GET_STARTED_BUTTON = '.hs-button'
 const SUBMISSION_MESSAGE = 'h2 > span'
 const ERROR= '.hs-error-msg'
+const SENIORITY= '#seniority-58999c50-a042-4baf-a822-2ec197817665'
+const CITY= 'input[name="0-2/city"]'
+const COUNTRY= 'input[name="0-2/country"]'
+const INDUSTRY= '#industry-58999c50-a042-4baf-a822-2ec197817665'
+const FAX= '#fax-58999c50-a042-4baf-a822-2ec197817665'
+
 
 export default class contactForm {
 
-  static fillForm({email, firstName, lastName, position, phone, company}) {
+  static fillForm({email, firstName, seniority, city, country, lastName, position, phone, company}) {
     cy.get(EMAIL).type(email)
     cy.get(FIRST_NAME).type(firstName)
+    cy.get(SENIORITY).type(seniority)
+    cy.get(CITY).type(city)
+    cy.get(COUNTRY).type(country)
     cy.get(LAST_NAME).type(lastName)
     cy.get(POSITION).type(position)
     cy.get(PHONE).type(phone)
-    cy.get(COMPANY).type(company)
+    cy.get(COMPANY).clear().type(company)
   }
 
   static submitForm() {

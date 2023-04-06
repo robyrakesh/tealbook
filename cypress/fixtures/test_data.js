@@ -1,6 +1,11 @@
+import { faker } from '@faker-js/faker';
+
 export const userDetails = {
-    email: `test-${Math.random().toString(36).slice(2, 15)}@taichi.com`,
+    email: faker.internet.email('rem', 'tr', 'gib.com'),
     firstName: 'Rakesh',
+    seniority: 'Adult',
+    city: 'Windsor',
+    country: 'Canada',
     lastName: 'test',
     position: 'TT',
     phone: 5193456677,
