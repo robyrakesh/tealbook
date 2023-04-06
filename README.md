@@ -3,6 +3,14 @@
 
 e2e tests for TealBook's marketing website targeting the contact form and search functionality. Tests are written using Cypress and JavaScript and using a page object model. Test report are generated using allure reports and all the test report and artifacts are stored in a github branch 'gh-pages'. Also, as part of this test, a free test reporting dashboard has been created using Allure and hosted on Github Pages
 
+## Allure Reports
+
+There are few jobs defined in the e2e-tealbook.yml workflow, which will take care of creating a test report using allure and deploying it to the Github Page server. So, we have a publicliy available free test reporting dashboard which can be accessed by anyone. Link to the test report :- https://robyrakesh.github.io/tealbook/
+
+
+<img width="1433" alt="Screen Shot 2023-04-06 at 4 40 49 PM" src="https://user-images.githubusercontent.com/47828587/230491800-862b7769-43d5-40d8-8e22-b95e060f428f.png">
+
+
 
 ## Available Scripts
 
